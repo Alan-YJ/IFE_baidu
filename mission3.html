@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏布局</title>
+	<style type="text/css">
+		body,div,dl,dt,dd,ul,li{
+			margin:0;
+			padding:0;
+		}
+		li{
+			list-style: none;
+		}
+		#box,.group_logo dt img,.member_logo li img{
+			background-color:#eee;
+		}
+		#box,.group,.member,.group_info div{
+			border:1px solid #999;
+			padding:20px;
+		}
+		#box{
+			width:calc(100%-40px);
+			min-width: 800px;
+		}
+			/*团队*/
+			.group{
+				width:160px;
+				height:80px;
+				padding:20px;
+				background-color:white;
+				float:left;
+			}
+			.member{
+				width:80px;
+				padding:20px;
+				background-color:white;
+				float:right;
+			}
+			.clearboth{
+				clear:both;
+			}
+			.group_logo dt img{
+				width:80px;
+				height:80px;
+			}
+			.group_logo dt,.group_logo dd{
+				display: inline-block;
+				vertical-align: top;
+			}
+			/*成员*/
+			.member_logo li img{
+				width:80px;
+				height:80px;
+			}
+			.member_logo li {
+				margin:20px 0px;
+			}
+			.member_logo li:first-child{
+				margin-top:0;
+			}
+			.member_logo li:last-child{
+				margin-bottom:0;
+			}
+			/*内容*/
+			.group_info{
+				line-height:20px;
+				margin:0 140px 0 220px;
+			}
+			.group_info div{
+				background-color:white;
+			}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div class="group">
+			<dl class="group_logo">
+				<dt> <img src="" alt="团队logo"></dt>
+				<dd>团队名称</dd>
+			</dl>
+		</div>
+		<div class="member">
+			<div class="member_logo">
+				<ul>
+					<li><img src="" alt="个人logo"></li>
+					<li><img src="" alt="个人logo"></li>
+					<li><img src="" alt="个人logo"></li>
+					<li><img src="" alt="个人logo"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="group_info">
+			<div >
+				<p>关于你们团队的介绍。</p>
+				<p>可以给我们解释一下团队名称的来历，或是分别介绍你们的团队成员。</p>
+				<p>以下为示例</p>
+				<p>百度Web前端技术学院（Baidu Institute of Front-End Techonlogy简称IFE）百度Web前端技术学院（Baidu Institute of Front-End Techonlogy简称IFE）百度Web前端技术学院（Baidu Institute of Front-End Techonlogy简称IFE）百度Web前端技术学院（Baidu Institute of Front-End Techonlogy简称IFE）百度Web前端技术学院（Baidu Institute of Front-End Techonlogy简称IFE）百度Web前端技术学院（Baidu Institute of Front-End Techonlogy简称IFE）百度Web前端技术学院（Baidu Institute of Front-End Techonlogy简称IFE）百度Web前端技术学院（Baidu Institute of Front-End Techonlogy简称IFE）</p>
+			</div>
+		</div>
+		<div class="clearboth"></div>
+	</div>
+</body>
+</html>
