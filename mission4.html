@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位和居中问题</title>
+	<style type="text/css">
+		#box{
+			/*高度已知的情况
+			margin:auto;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			height:200px;*/
+
+			/*高度未知的情况*/
+			transform:translate(-50%,-50%);
+			top:50%;
+			left:50%;
+			width:260px;
+			padding:20px 70px;
+			overflow: hidden;
+			position:absolute;
+			background-color:#ccc;
+		}
+		#box div{
+			position:absolute;
+			background-color:#fc0;
+			border-radius: 50%;
+			width:100px;
+			height:100px;
+		}
+		#box div#yellowleft{
+			left:-50px;
+			top:-50px;
+
+		}
+		#box div#yellowlright{
+			right:-50px;
+			bottom:-50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="yellowleft"></div>
+		<div id="yellowlright"></div>
+		你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊
+	</div>
+</body>
+</html>
